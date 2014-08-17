@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../main.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<title>Shucker's Cottages</title>
+</head>
+
+<body>
+    
+	<div class="jumbotron">
+		<div class="container">
+    		<h1>Shucker's Cottages</h1>
+    	</div>
+ 	</div>
+    
+<div class="main">
+<div class="container">
+    
+    <div class="nav nav-pills">
+		<div class="container">
+			<ul class="pull-right">
+				<li><a href="../index.html">About</a></li>
+				<li><a href="shuckers.html">Shucker's</a></li>
+				<li class="active"><a href="andreas.html">Andrea's</a></li>
+				<li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+    
+    <div class="maincontent"><!-- main content here -->
+    	<h1>Andrea's Cottage</h1>
+        <p>Andrea's Cottage is a three bedroom cottage which sleeps up to nine persons in proper beds</br>
+		Andrea's provides three bedrooms: the master bedroom contains a queen sized bed and a single. Another room provides a double bed and set of signle bunks and the third room twin single beds. If required, there is an additional foldaway single bed available.</p>
+        
+<p>Andrea's Cottage has a kitchen containing all required cooking implements, a combined lounge and dining area, bathroom, separate toilet, laundry & an outside covered BBQ area in a fenced backyard.</p>
+    
+    
+<!--  Carousel - consult the Twitter Bootstrap docs at 
+      http://twitter.github.com/bootstrap/javascript.html#carousel -->
+<div id="andrea-carousel" class="carousel slide" data-ride="carousel"><!-- class of slide for animation -->
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="andrea-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="andrea-carousel" data-slide-to="1"></li>
+    <li data-target="andrea-carousel" data-slide-to="2"></li>
+    <li data-target="andrea-carousel" data-slide-to="3"></li>
+    <li data-target="andrea-carousel" data-slide-to="4"></li>
+    <li data-target="andrea-carousel" data-slide-to="5"></li>
+  </ol>
+  
+  <div class="carousel-inner">
+    <div class="item active"><!-- class of active since it's the first item -->
+      <img src="../images/andreas-yard.jpg" alt="" />
+      <div class="carousel-caption">
+        <p id="caption">Andrea's Cottage</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../images/andreas-patio.jpg" alt="" />
+      <div class="carousel-caption">
+        <p  id="caption">Outdoor BBQ patio</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../images/andreas-dining.jpg" alt="" />
+      <div class="carousel-caption">
+        <p  id="caption">Dining Room</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../images/andreas-kitchen.jpg" alt="" />
+      <div class="carousel-caption">
+        <p  id="caption">Fully Equipped Kitchen</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../images/andreas-qn-bedroom.jpg" alt="" />
+      <div class="carousel-caption">
+        <p  id="caption">Master Bedroom</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../images/andreas-tn-bedroom.jpg" alt="" />
+      <div class="carousel-caption">
+        <p  id="caption">Twin Bedroom</p>
+      </div>
+    </div>
+  </div><!-- /.carousel-inner -->
+  
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+   <!-- <a class="carousel-control left" href="#andrea-carousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#andrea-carousel" data-slide="next">&rsaquo;</a>-->
+      <!-- Controls -->
+  <a class="left carousel-control" href="#andrea-carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#andrea-carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div><!-- /.carousel -->
+            
+</div>
+</div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      interval: 2000
+    });
+  });
+</script>
+
+
+</body>
+</html>

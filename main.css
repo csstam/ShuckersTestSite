@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* CSS Document */
+/* background colour: dcd3bc */
+
+.main .container {
+	margin-top: 0px;
+	width:90%;
+	background-color: #FFF;
+	padding: 12px;
+}
+
+.jumbotron {
+	background-image: url("images/wineglass.jpg");
+	background-color: #fff;
+	background-position:center;
+	height: 400px;
+	background-repeat: no-repeat;
+	margin-bottom:: 0px;
+}
+.jumbotron .container {
+  position: relative;
+  top: 250px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.nav a, .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > li > a:hover {
+	text-decoration: none;
+	color: #5a5a5a;
+  	font-size: 14px;
+  	font-weight: bold;
+  	padding: 10px 10px;
+  	text-transform: uppercase;
+	font-weight: bold;
+	border-radius:4px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #5a5a5a;
+  	background-color: #FFF;
+  	display: inline;
+}
+
+.nav-pills > li > a{
+    border-radius:4px;
+}
+
+.nav li {
+  display: inline;
+}
+
+.maincontent h1 {
+	color: #5a5a5a;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size: 32px;
+}
+.maincontent p {
+	color: #5a5a5a;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#caption {
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-style: bold;
+	font-size: 14px;
+	color: #fff;	
+}
