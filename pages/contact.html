@@ -41,6 +41,28 @@
     <div class="maincontent"><!-- main content here -->
     	<h1>Contact Us</h1>
         <p align="center">To make a booking please call Andrea on 0418 579 980 or <a href="mailto:shuckerscottages@iprimus.com.au">email us</a>. </p>
+        
+      <h3>Submit a booking Query:</h3>
+		<!-- Uses mail client :/
+		<form name="bookingQuery" action="MAILTO:csstam@gmail.com" method="post" onsubmit="return validateForm()" enctype="text/plain">
+		  <table>
+		    <tr><td>Name:</td><td><input type="text" name="name" value=""></td></tr>
+        	<tr><td>Phone:</td><td><input type="tel" name="phone" value=""></td></tr>
+        	<tr><td>E-mail:</td><td><input type="email" name="email" value=""></td></tr>
+        	<tr><td>Number of persons:</td><td><input type="number" name="noPersons" value="" min="1" max="10"></td></tr>
+        	<tr><td>Which cottage do you wish to rent:</td><td><input type="checkbox" name="cottage" value="Shuckers">Shucker's  
+            <input type="checkbox" name="cottage" value="Andreas">Andrea's</td></tr>
+            <tr><td>Check in Date:</td><td><input type="date" name"checkIn" /></td></tr>
+            <tr><td>Check out Date:</td><td><input type="date" name"checkOut" /></td></tr>
+              
+          	<tr><td>Comment:</td><td><textarea name="comment" rows="3" cols="30"></textarea></td></tr>
+        	<tr><td></td><td>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+            </td></tr>
+          </table>
+	  </form>
+      -->
 
 
             
@@ -52,15 +74,35 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../bootstrap/js/bootstrap.min.js"></script>
-
 <script>
-  $(document).ready(function(){
-    $('.carousel').carousel({
-      interval: 2000
-    });
-  });
+function validateForm() {
+    var x = document.forms["bookingQuery"]["name"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+	
+	x = document.forms["bookingQuery"]["phone"].value;
+    if (x.length<10) {
+        alert("Not a valid phone number");
+        return false;
+    }
+	
+	x = document.forms["bookingQuery"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+	
+	var checkin  = document.forms["bookingQuery"]["checkIn"].value;
+	var checkout = document.forms["bookingQuery"]["checkOut"].value;
+    if (checkin>checkout) {
+        alert("Check-out date must be after check-in date");
+        return false;
+    }
+}
 </script>
-
-
 </body>
 </html>

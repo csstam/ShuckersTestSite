@@ -34,7 +34,7 @@
 	color: #5a5a5a;
   	font-size: 14px;
   	font-weight: bold;
-  	padding: 10px 10px;
+  	padding: 5px 5px;
   	text-transform: uppercase;
 	font-weight: bold;
 	border-radius:4px;
@@ -57,6 +57,12 @@
 	color: #5a5a5a;
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
 	font-size: 32px;
+}
+
+.maincontent h3 {
+	color: #5a5a5a;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size: 24px;
 }
 .maincontent p {
 	color: #5a5a5a;
